@@ -41,7 +41,30 @@ $ npm run test:e2e
 # Test coverage
 $ npm run test:cov
 ```
+## Docker
 
+You can run the application using Docker for a consistent and isolated environment.
+
+### Build the Docker Image
+
+```bash
+$ docker build -t nestjs-clean-architecture .
+```
+
+### Run the Docker Container
+
+```bash
+$ docker run -p 3000:3000 nestjs-clean-architecture
+```
+
+### Stop the Docker Container
+
+To stop the running container, find its container ID and stop it:
+
+```bash
+$ docker ps
+$ docker stop <container_id>
+```
 ## Author
 
 - **Renzo Reccio**
